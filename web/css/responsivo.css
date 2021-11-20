@@ -1,0 +1,152 @@
+/*Vamos sobreescrever algumas coisas nesse css aqui. 
+tudo aqui vai tratar da parte responsiva do site, mas tratando-se mais dos elemento e nao 
+do layout, pois no grid css isso ja é feito com as media queries. aqui vamos modificar 
+elementos como <li>, <header> ...*/
+@media only screen and (min-width: 805px) and (max-width: 996px) {
+  /*encaixando a linha corretamente */
+  .qualidade:after {
+    right: 66px;
+  }
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
+  .footer_redes ul li a {
+    padding: 5px;
+  }
+  /*ele diminuiu o tamanho da img que antes era 32 por 32 e colocou para 26 por 26. eu achava que era mais simples mexer na margem de 10px assim diminuindo para 5px, mas talvez assim seja mais correto*/
+  /*colocando os lados iguais mantemos a proporção, afinal continua sendo um quadrado*/
+  .footer_redes ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+  /*================================= PRODUTOS =====================================*/
+  .produto_item h2 {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+  .produto_icone {
+    padding: 41px 0;
+  }
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: 122px;
+    padding: 20px 30px;
+  }
+  .produto_info ul li {
+    width: 181px;
+    height: 49px;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  /* ==================================HEADER======================*/
+  .header {
+    /*Pode ser esse ou o static, a não ser que ainda o movimentaremos*/
+    position: relative;
+    padding-bottom: 0px;
+  }
+  /*Centraliza a logo*/
+  /* o problema da margen a mais dava-se pela imagem ser display block*/
+  .header img {
+    margin: 0px auto 10px auto;
+  }
+  /*Vai centralizar o menu*/
+  .header_menu {
+    text-align: center;
+    margin: 0px auto 20px auto;
+  }
+  /*Cada li, tinha uma margem a esquerda. não tem mais*/
+  .header_menu ul li {
+    margin: 5px;
+  }
+  .header_menu ul li a {
+    color: black;
+    border: 4px solid black;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+  .header_menu ul li a:hover {
+    border-color: white;
+  }
+  /*=======================INTRODUCAO===================*/
+  .introducao {
+    margin-top: 0;
+    padding-top: 40px;
+    /*aqui vamos modificar a foto de fundo, pois a mesma é menor, e como es ta parte 
+    trata do mobile, presumimos que o usuario esta usando no minimo uma conexao 3g, 
+    entao colocamos uma foto menor, a outra tinha uns 1440px de largura e essa nova tem somente 768px */
+    background-image: url("../img/bg-mobile.jpg");
+    background-size: cover;
+  }
+  .introducao h1 {
+    font-size: 36px;
+  }
+  /*diminui a altura do call*/
+  .call {
+    padding-top: 10px;
+  }
+  /*vai sumir com a linha, como é um after tem que ser block, mas colocando um none ela some*/
+  .qualidade:after {
+    display: none;
+  }
+  /*ANTES SÓ DEIXAVA O TEXTO EM BRANCO, AGORA DEIXA A BORDA TAMBEM. ESTÁ ACRESENTANDO PROPRIEDADES E NAO SUBSTITUINDO*/
+  .header_menu ul li a.menu_ativo {
+    border-color: white;
+  }
+  /*=========================== INTRODUCAO INTERNA ==================================*/
+  .introducao_interna {
+    margin-top: 0px;
+    color: #fff;
+  }
+  /*SOBREESCREVENDO O P DA PAGINA SOBRE, ESSA REGRA ESTÁ NO ARQUIVO SOBRE.CSS*/
+  .missao_sobre p {
+    padding-right: 0px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .missao_sobre ul li {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  /* =============================== PRODUTOS ======================================*/
+  .produto_item h2 {
+    top: -115px;
+    margin-bottom: -85px;
+  }
+  .produto_icone {
+    padding: 41px 0;
+  }
+  .produto_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    padding: 20px 30px;
+  }
+  /*aqui teremos um problema, como as divs no modo mobile nao flutuaram, 
+  os elementos que flutuam dentro dela nao seram pegos, como é o caso dessa ul.
+  os elementos dentro dela flutuam, entao tecnicamente ela nao tem um tamanho. 
+  para resolver isto, podemos aplicar um overflow no ul, assim fazendo ele recontar seu tamanho*/
+  .produto_info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+  .form {
+    padding-right: 0px;
+  }
+  .orcamento_dados ul{
+    padding-right: 0px;
+  }
+
+/*========================CONTATO==========================*/
+.contato-form {
+  padding-right: 0px;
+  margin-bottom: 20px;
+}  
+}
+

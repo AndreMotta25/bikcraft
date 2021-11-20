@@ -1,0 +1,165 @@
+.interna_produtos {
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+}
+.produto_item {
+  padding-top: 60px;
+}
+/*Pelo jeito o text align nao funciona no position absolute*/
+.produto_item h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: -190px;
+  color: white;
+  margin-bottom: -75px;
+}
+.produto_item h2:before,
+.produto_item h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 14px auto 10px auto;
+}
+.produto_icone {
+  background: #000;
+  padding: 70px 0;
+}
+/*temos que fazer isso para centralizar a foto pq, lá no style, ele defini
+que as fotos terão comportamento em bloco, e as fotos estando em bloco
+o text align nao funcionará mais */
+.produto_icone img {
+  margin: 0 auto;
+}
+.produto_info {
+  background-color: #000;
+}
+.produto_info p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 30px 40px;
+  height: 180px;
+}
+.produto_info ul li {
+  background-color: #fec63e;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  width: 229px;
+  height: 50px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+.produto_info ul li:nth-child(odd) {
+  margin-right: 2px;
+}
+.produto_info ul li:nth-child(1),
+.produto_info ul li:nth-child(2) {
+  margin-bottom: 2px;
+}
+
+/*======================ORÇAMENTO===============*/
+.orcamento {
+  background-color: #000;
+  width: 100%;
+  /*usando o margin top aqui, seria a mesma coisa que 
+  utilizar o padding-bottom na secao acima */
+  margin-top: 60px;
+  padding: 40px 0;
+}
+.form {
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+.orcamento h2 {
+  color: #fec63e;
+}
+.orcamento h2:after {
+  color: #fec63e;
+}
+/*vai deixar as label em blocos, assim deixando 
+tudo um embaixo do outro*/
+.form label {
+  display: block;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+.form input {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  background: none; /* vai tirar a cor de fundo*/
+  color: white; /*quando o usuario escrever, a letra vai ficar
+  da cor branca */
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #fec63e;
+  background: none; /* vai tirar a cor de fundo*/
+  color: white; /*quando o usuario escrever, a letra vai ficar
+  da cor branca */
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form button {
+  display: block;
+  background: none; /* vai tirar a cor de fundo*/
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 40px;
+}
+
+.orcamento_dados {
+  color: #fff;
+}
+.orcamento_dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+.orcamento_dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.dados_email {
+  margin-bottom: 40px;
+}
+.orcamento_dados ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+/*vai selecionar só os impares e vai mudar de cor */
+.orcamento_dados ul li:nth-child(odd) {
+  background: #1d1d1d;
+}
+.orcamento_dados p {
+  margin: 10px 0;
+}
+.orcamento_dados ul {
+  padding-right: 60px;
+}

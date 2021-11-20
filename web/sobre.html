@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bikcraft - Saiba mais sobre a gente</title>
+  <!-- O CERTO SERIA TER UMA DESCRIÇAO PARA CADA PAGINA -->
+  <meta name="description" content="Contando a hstoria da Bikcraft">
+  <!--PELO QUE ENTENDI ESSA TAG META PROPERTY, É PARA 
+  FALAR DIRETAMENTE COM REDES SOCIASI -->
+  <!-- no lugar de website poderiamos colocar algo como 
+  article, dizendo que o conteudo compartilhado é um site-->
+  <meta property="og:type" content="website">
+  <!--quando eu compartilhar o site, digamos pelo facebook, eu vou querer que o titulo do compartilhamento seja esse titulo de baixo
+   ideal é que seja igual ao titolo da pagina   -->  
+  <meta property="og:title" content="Bikcraft - Saiba mais sobre a gente">
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelos Passeio, Retro e Esporte">
+  <meta property="og:url" content="https://bikcraft.com/sobre.html">
+  <!-- queremos que quando o site for compartilhado o site tenha a imagem  a baixo-->
+  <meta property="og:image" content="https://bikcraft.com/img/og-image.png">
+  <!-- O INITIAL-SCALE  É TIPO UMA ESCALA DE ZOOM, O 1 SIGNIFICA QUE PERMANECE ORIGINAL-->
+  <meta name="viewport" content="width= device-width, initial-scale=1">  
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/stylo.css">
+  
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <!--Estamos mostrando que isto é uma cabeçalho, criando uma semantica. é muito bom para os buscadores-->
+  <header class="header">
+    <!-- Este div vai conter a logo, e o resto do menu, vai ser um container. não tem significado semantico -->
+    <div class="container">
+      <!--Uma logo nunca é pura, sempre leva a algum lugar, normalmente a pagina home-->
+      <!--O interessante aqui, é que o grid-4 tem um comprimento de 220px, e como isto está em link, mesmo que não tenha mais nada na area, a parte vazia tambem é clicavel-->
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="bikcraft">
+      </a>
+      <!--Mostra para o browser que aqui começa  a nossa navegação, é semantico(dá sentido).-->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html" class="menu_ativo">Sobre</a></li>
+          <li><a href="Produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="introducao_interna interna_sobre">
+    <div class="container">
+      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+      <p data-anime="800" class="fadeInDown">conheça mais sobre a bikcraft</p>
+    </div>
+  </section>
+
+  <section class="missao_sobre container fadeInDown" data-anime="1200">
+    <div class="grid-10">
+      <h2 class="subtitulo-interno">Historia, Missão e Visão</h2>
+      <p>
+        O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter um genuino.
+      </p>
+      <p>
+        O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter um genuino.
+      </p>
+    </div>
+    <div class="grid-6">
+      <h2 class="subtitulo-interno">Valores</h2>
+      <ul>
+        <li>
+          - qualidade no processo com
+        </li>
+        <li>
+          - foco no cliente sem perder a
+        </li>
+        <li>
+          - diversão, preservando a
+        </li>
+        <li>
+          - natureza com sustentabilidade
+        </li>
+      </ul>
+    </div>
+    <!--Vai pegar de ponta a ponta-->
+    <div class="grid-16 foto-equipe">
+      <img src="img/equipe-bikcraft.jpg" alt="equipe">
+    </div>
+  </section>
+  <!--Como não teremos uma cor diferente da de branco nesta seção, não precisaremos colocar uma div como container. colocamos a propria section como o container.-->
+  <section class="container qualidade">
+    <h2 class="subtitulo">Qualidade</h2>
+    <img src="img/bikcraft-qualidade.svg" alt="bikcraft">
+    <ul class="qualidade_lista">
+      <li class="grid-1-3">
+        <h3>Durabilidade</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+      <li class="grid-1-3">
+        <h3>Design</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+      <li class="grid-1-3">
+        <h3>Sustentabilidade</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+    </ul>
+    <div class="call">
+      <p>conheça mais a nossa historia</p>
+      <a href="sobre.html" class="btn btn-preto">Sobre</a>
+    </div>
+  </section>
+
+  <!--pra quebrar a monotomia dos texto-->
+  <div class="quebra">
+    <blockquote class="quote-externo container">
+      <p>"o verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes
+        da vida cotidiana."
+      </p>
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </div>
+
+  <footer>
+    <!--esse vai ser o 100%-->
+    <div class="footer">
+      <!--aqui o  container-->
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa Historia</h3>
+          <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana.
+            O verdadeiro segredo da felicidade está em ter um genuino.</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <!--Uma lista de contato-->
+          <ul>
+            <li>- 21 23232-4343</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Botafogo - RJ</li>
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes Socias</h3>
+          <ul>
+            <li>
+              <a href="facebook.com" target="_blank">
+                <img src="img/sociais/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="instagram.com" target="_blank">
+                <img src="img/sociais/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li>
+              <a href="twiter.com" target="_blank">
+                <img src="img/sociais/twitter.svg" alt="twiter">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2015- Alguns direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

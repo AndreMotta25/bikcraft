@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bikcraft - Bicicletas Personalizadas</title>
+  <!-- O CERTO SERIA TER UMA DESCRIÇAO PARA CADA PAGINA -->
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelos Passeio, Retro e Esporte">
+  <!--PELO QUE ENTENDI ESSA TAG META PROPERTY, É PARA 
+  FALAR DIRETAMENTE COM REDES SOCIASI -->
+  <!-- no lugar de website poderiamos colocar algo como 
+  article, dizendo que o conteudo compartilhado é um site-->
+  <meta property="og:type" content="website">
+  <!--quando eu compartilhar o site, digamos pelo facebook, eu vou querer que o titulo do compartilhamento seja esse titulo de baixo
+   ideal é que seja igual ao titolo da pagina   -->  
+  <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas">
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelos Passeio, Retro e Esporte">
+  <meta property="og:url" content="https://bikcraft.com/">
+  <!-- queremos que quando o site for compartilhado o site tenha a imagem  a baixo-->
+  <meta property="og:image" content="https://bikcraft.com/img/og-image.png">
+  <!-- O INITIAL-SCALE  É TIPO UMA ESCALA DE ZOOM, O 1 SIGNIFICA QUE PERMANECE ORIGINAL-->
+  <meta name="viewport" content="width= device-width, initial-scale=1">  
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/stylo.css">
+  
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <!--Estamos mostrando que isto é uma cabeçalho, criando uma semantica. é muito bom para os buscadores-->
+  <header class="header">
+    <!-- Este div vai conter a logo, e o resto do menu, vai ser um container. não tem significado semantico -->
+    <div class="container">
+      <!--Uma logo nunca é pura, sempre leva a algum lugar, normalmente a pagina home-->
+      <!--O interessante aqui, é que o grid-4 tem um comprimento de 220px, e como isto está em link, mesmo que não tenha mais nada na area, a parte vazia tambem é clicavel-->
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="bikcraft">
+      </a>
+      <!--Mostra para o browser que aqui começa  a nossa navegação, é semantico(dá sentido).-->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="introducao">
+    <div class="container int">
+      <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+      <blockquote data-anime="800" class="quote-externo fadeInDown">
+        <p>nao tenha nada em sua casa que voce considere util ou acredita ser bonito</p>
+        <cite>WILLIAM MORRIS</cite>
+      </blockquote>
+      <a href="produtos.html" data-anime="1200" class="btn">Orçamento</a>
+    </div>
+  </section>
+  <!--Como não teremos uma cor diferente da de branco nesta seção, não precisaremos colocar uma div como container. colocamos a propria section como o container.-->
+  <section class="produtos container fadeInDown" data-anime="1600">
+    <h2 class="subtitulo">Produtos</h2>
+    <!--Podemos ver esses produtos como uma lista. Por isso utilizamos um <ul>-->
+    <ul class="produtos_lista">
+      <li class="grid-1-3">
+        <!--Eu acho que aqui se usa a div, pois é nela que aplicamos o efeito de fundo preto e um outro motivo é que o jeito que a div aplica o fundo é 
+        muito mais pratico do que aplicar direto no img, pois pelo tamanho do img, o fundo preto nao iria pegar o comprimento todo do li. por 
+      isso colocamos na div, assim a img mantem seu tamanho necessario-->
+        <div class="produtos_icone">
+          <img src="img/produtos/passeio.svg" alt="bikcraft_passeio">
+        </div>
+        <h3>Passeio</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+      <li class="grid-1-3">
+        <!--eu acho que é usada a div aqui para 
+        somente estilizar a foto, criando o fundo preto-->
+        <div class="produtos_icone">
+          <img src="img/produtos/esporte.svg" alt="bikcraft_esport">
+        </div>
+        <h3>Esporte</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+      <li class="grid-1-3">
+        <!--Eu acho que aqui se usa a div, pois é nela que aplicamos o efeito de fundo preto-->
+        <div class="produtos_icone">
+          <img src="img/produtos/retro.svg" alt="bikcraft_passeio">
+        </div>
+        <h3>retro</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+    </ul>
+    <!--
+      call to action, é para interagir com o usuario
+    -->
+    <div class="call">
+      <p>clique aqui e veja os detalhes dos produtos</p>
+      <a href="produtos.html" class="btn btn-preto">Produtos</a>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="subtitulo">portfolio</h2>
+      <ul class="portfolio_lista">
+        <!--como aqui ele nao aplica estilo de nenhum tipo, não é 
+        necessario o uso da div-->
+        <li class="grid-8">
+          <img src="img/portfolio/retro.jpg" alt="bicleta retro">
+        </li>
+        <li class="grid-8">
+          <img src="img/portfolio/passeio-1.jpg" alt="bicleta retro">
+        </li>
+        <li class="grid-16">
+          <img src="img/portfolio/esporte.jpg" alt="bicleta retro">
+        </li>
+      </ul>
+      <!--como nao tem uma tag especifica pra esse grupo, ele coloca os dois numa div chamada call(call-to-action)-->
+      <div class="call">
+        <p>conheça mais o nosso portfolio</p>
+        <a href="portfolio.html" class="btn">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container qualidade">
+    <h2 class="subtitulo">Qualidade</h2>
+    <!--como ele nao aplica estilo nessa imagem, ele nao usa div-->
+    <img src="img/bikcraft-qualidade.svg" alt="bikcraft">
+    <ul class="qualidade_lista">
+      <li class="grid-1-3">
+        <h3>Durabilidade</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+      <li class="grid-1-3">
+        <h3>Design</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+      <!-- porque n usar uma li aqui? pq como isso é uma lista , ja temos a semantica da qual precisamos. estamos dizendo que isso aqui faz parte de 
+      uma lista, entao qualquer coisa podemos aplicar estilo na lista -->
+      <li class="grid-1-3">
+        <h3>Sustentabilidade</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação </p>
+      </li>
+    </ul>
+    <div class="call">
+      <p>conheça mais a nossa historia</p>
+      <a href="sobre.html" class="btn btn-preto">Sobre</a>
+    </div>
+  </section>
+
+  <!--pra quebrar a monotomia dos texto-->
+  <!--VOU TROCAR ESTE SECTION POR UMA DIV, POIS AO VALIDARMOS A PAGINA INDEX NO W3C, O MESMO APONTA DIZENDO QUE UMA SEÇÃO DEVE TER
+  PELO OQUE EU ENTENDI UM CABEÇALHO COMO UM H1 OU H2. SÓ GERA UM WARNING E NÃO UM ERRO , ENTAO NAO É OBRIGATORIO-->
+  <div class="quebra">
+    <blockquote class="quote-externo container">
+      <p>"o verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes
+        da vida cotidiana."
+      </p>
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </div>
+
+  <footer>
+    <!--esse vai ser o 100%-->
+    <div class="footer">
+      <!--aqui o  container-->
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa Historia</h3>
+          <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana.
+            O verdadeiro segredo da felicidade está em ter um genuino.</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <!--Uma lista de contato-->
+          <ul>
+            <li>- 21 23232-4343</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Botafogo - RJ</li>
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes Socias</h3>
+          <ul>
+            <li>
+              <a href="facebook.com" target="_blank">
+                <img src="img/sociais/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="instagram.com" target="_blank">
+                <img src="img/sociais/instagram.svg" alt="instagran">
+              </a>
+            </li>
+            <li>
+              <a href="twiter.com" target="_blank">
+                <img src="img/sociais/twitter.svg" alt="twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2015- Alguns direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

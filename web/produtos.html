@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bikcraft- Conheça as linhas Passeio, Retro e Esporte</title>
+  <!-- O CERTO SERIA TER UMA DESCRIÇAO PARA CADA PAGINA -->
+  <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelos Passeio, Retro e Esporte">
+  <!--PELO QUE ENTENDI ESSA TAG META PROPERTY, É PARA 
+  FALAR DIRETAMENTE COM REDES SOCIASI -->
+  <!-- no lugar de website poderiamos colocar algo como 
+  article, dizendo que o conteudo compartilhado é um site-->
+  <meta property="og:type" content="website">
+  <!--quando eu compartilhar o site, digamos pelo facebook, eu vou querer que o titulo do compartilhamento seja esse titulo de baixo
+   ideal é que seja igual ao titolo da pagina   -->  
+  <meta property="og:title" content="Bikcraft -  Conheça as linhas Passeio, Retro e Esporte">
+  <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft.
+  Possuimos modelos Passeio, Retro e Esporte">
+  <meta property="og:url" content="https://bikcraft.com/produtos.html">
+  <!-- queremos que quando o site for compartilhado o site tenha a imagem  a baixo-->
+  <meta property="og:image" content="https://bikcraft.com/img/og-image.png">
+  <!-- O INITIAL-SCALE  É TIPO UMA ESCALA DE ZOOM, O 1 SIGNIFICA QUE PERMANECE ORIGINAL-->
+  <meta name="viewport" content="width= device-width, initial-scale=1">  
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/stylo.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <!--Estamos mostrando que isto é uma cabeçalho, criando uma semantica. é muito bom para os buscadores-->
+  <header class="header">
+    <!-- Este div vai conter a logo, e o resto do menu, vai ser um container. não tem significado semantico -->
+    <div class="container">
+      <!--Uma logo nunca é pura, sempre leva a algum lugar, normalmente a pagina home-->
+      <!--O interessante aqui, é que o grid-4 tem um comprimento de 220px, e como isto está em link, mesmo que não tenha mais nada na area, a parte vazia tambem é clicavel-->
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="bikcraft">
+      </a>
+      <!--Mostra para o browser que aqui começa  a nossa navegação, é semantico(dá sentido).-->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Produtos.html" class="menu_ativo">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="introducao_interna interna_produtos">
+    <div class="container">
+      <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+      <p data-anime="800" class="fadeInDown">conheça todos os nossos produtos</p>
+    </div>
+  </section>
+  <!--PASSEIO-->
+  <section class="container produto_item fadeInDown" data-anime="400">
+    <div class="grid-11">
+      <img src="img/produtos/bikecraft-passeio-1.jpg" alt="Bikecraft-passeio-1">
+      <h2>Passeio</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/passeio.svg" alt="">
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikecraft-passeio-2.jpg" alt="Bikecraft-passeio-2">
+    </div>
+    <div class="grid-8 produto_info">
+      <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter um genuino.</p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <!--ESPORTE-->
+  <section class="container produto_item">
+    <div class="grid-11">
+      <img src="img/produtos/bikecraft-esporte-1.jpg" alt="Bikecraft-esporte-1">
+      <h2>Esporte</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/esporte.svg" alt="">
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikecraft-esporte-2.jpg" alt="Bikecraft-esporte-2">
+    </div>
+    <div class="grid-8 produto_info">
+      <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter um genuino.</p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <!--RETRO-->
+  <section class="container produto_item">
+    <div class="grid-11">
+      <img src="img/produtos/bikecraft-retro-1.jpg" alt="Bikecraft-retro-1">
+      <h2>Retro</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/retro.svg" alt="">
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikecraft-retro-2.jpg" alt="Bikecraft-retro-2">
+    </div>
+    <div class="grid-8 produto_info">
+      <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana. O verdadeiro segredo da felicidade está em ter um genuino.</p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <section class="orcamento">
+    <div class="container">
+      <h2 class="subtitulo">Orçamento</h2>
+      <form action="enviar.php" method="POST" id="form_orcamento" class="form grid-8 formphp">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required >
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+        <!--FORMULARIO BOT-->
+        <label class="nao-aparece">SE VOCE NAO É UM ROBO, DEIXE EM BRANCO</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label class="nao-aparece">SE VOCE NAO É UM ROBO, nao mude este campo</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="https://">
+  
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button id="enviar" name="enviar" type="submit" class="btn">enviar</button>
+      </form>
+      <div class="orcamento_dados  grid-8">
+        <h3>Dados</h3>
+        <!--Eu acho que no lugar do span, poderiamos ter colocado uma lista-->
+        <span>+55 21 93223 3232</span>
+        <span class="dados_email">orcamento@bikcraft.com</span>
+
+        <h3>Monte a sua bikcraft</h3>
+        <!-- aqui eu teria colocado como um span-->
+        <p>Escolha as Especificaçoes</p>
+        <ul>
+          <li>- Cores</li>
+          <li>- Estilo</li>
+          <li>- Medidas</li>
+          <li>- Acessórios</li>
+          <li>- E Outros</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--pra quebrar a monotomia dos texto-->
+  <div class="quebra">
+    <blockquote class="quote-externo container">
+      <p>"o verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes
+        da vida cotidiana."
+      </p>
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </div>
+
+  <footer>
+    <!--esse vai ser o 100%-->
+    <div class="footer">
+      <!--aqui o  container-->
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa Historia</h3>
+          <p>O verdadeiro segredo da felicidade está em ter um genuino interesse por todos os detalhes da vida cotidiana.
+            O verdadeiro segredo da felicidade está em ter um genuino.</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <!--Uma lista de contato-->
+          <ul>
+            <li>- 21 23232-4343</li>
+            <li>- contato@bikcraft.com</li>
+            <li>- Botafogo - RJ</li>
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes Socias</h3>
+          <ul>
+            <li>
+              <a href="facebook.com" target="_blank">
+                <img src="img/sociais/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="instagram.com" target="_blank">
+                <img src="img/sociais/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li>
+              <a href="twiter.com" target="_blank">
+                <img src="img/sociais/twitter.svg" alt="twiter">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2015- Alguns direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/simple-form.js"></script>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

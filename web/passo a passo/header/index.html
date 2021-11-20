@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>bikcraft</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/stylo.css">
+</head>
+
+<body>
+  <!--Estamos mostrando que isto é uma cabeçalho, criando uma semantica. é muito bom para os buscadores-->
+  <header class="header">
+    <!-- Este div vai conter a logo, e o resto do menu, vai ser um container. não tem significado semantico -->
+    <div class="container">
+      <!--Uma logo nunca é pura, sempre leva a algum lugar, normalmente a pagina home-->
+      <!--O interessante aqui, é que o grid-4 tem um comprimento de 220px, e como isto está em link, mesmo que não tenha mais nada na area, a parte vazia tambem é clicavel-->
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="bikcraft">
+      </a>
+      <!--Mostra para o browser que aqui começa  a nossa navegação, é semantico(dá sentido).-->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+
+</html>

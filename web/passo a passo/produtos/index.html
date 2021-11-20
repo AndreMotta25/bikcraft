@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>bikcraft</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/stylo.css">
+</head>
+
+<body>
+  <!--Estamos mostrando que isto é uma cabeçalho, criando uma semantica. é muito bom para os buscadores-->
+  <header class="header">
+    <!-- Este div vai conter a logo, e o resto do menu, vai ser um container. não tem significado semantico -->
+    <div class="container">
+      <!--Uma logo nunca é pura, sempre leva a algum lugar, normalmente a pagina home-->
+      <!--O interessante aqui, é que o grid-4 tem um comprimento de 220px, e como isto está em link, mesmo que não tenha mais nada na area, a parte vazia tambem é clicavel-->
+      <a href="index.html" class="grid-4">
+        <img src="img/bikcraft.svg" alt="bikcraft">
+      </a>
+      <!--Mostra para o browser que aqui começa  a nossa navegação, é semantico(dá sentido).-->
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="Produtos.html">Produtos</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="introducao">
+    <div class="container">
+      <h1>Bicicletas Feitas a Mão</h1>
+      <blockquote class="quote-externo">
+        <p>nao tenha nada em sua casa que voce considere util ou acredita ser bonito</p>
+        <cite>WILLIAM MORRIS</cite>
+      </blockquote>
+      <a href="produtos.html" class="btn">Orçamento</a>
+    </div>
+  </section>
+  <!--Como não teremos uma cor diferente da de branco nesta seção, não precisaremos colocar uma div como container. colocamos a propria section como o container.-->
+  <section class="produtos container">
+    <h2 class="subtitulo">Produtos</h2>
+    <!--Podemos ver esses produtos como uma lista. Por isso utilizamos um <ul>-->
+    <ul class="produtos_lista">
+      <li class="grid-1-3">
+        <div class="produtos_icone">
+          <img src="img/produtos/passeio.svg" alt="bikcraft_passeio">
+        </div>
+        <h3>Passeio</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+      <li class="grid-1-3">
+        <div class="produtos_icone">
+          <img src="img/produtos/esporte.svg" alt="bikcraft_esport">
+        </div>
+        <h3>Esporte</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+      <li class="grid-1-3">
+        <div class="produtos_icone">
+          <img src="img/produtos/retro.svg" alt="bikcraft_passeio">
+        </div>
+        <h3>retro</h3>
+        <p>Ainda assim, existem duvidas a respeito de como a necessidade de renovação</p>
+      </li>
+    </ul>
+    <!--
+      call to action, é para interagir com o usuario
+    -->
+    <div class="call">
+      <p>clique aqui e veja os detalhes dos produtos</p>
+      <a href="produtos.html" class="btn btn-preto">Produtos</a>
+    </div>
+  </section>
+</body>
+
+</html>

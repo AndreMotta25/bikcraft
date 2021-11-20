@@ -1,0 +1,40 @@
+/*Estilos gerais*/
+body {
+  /*Como a maioria do site usará arial, definimos no body a fonte como  arial, senão tiver arial, vai ter a helvetica e se não tiver está o browser colocará qualquer fonte que não tenha serif*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+.header {
+  /*Faz o menu ficar fixo,ou seja, não subira junto com o scroll */
+  position: fixed;
+  /*Para garantir que o menu nunca saía do topo*/
+  top: 0;
+  /*Vai ter 100% do tamanho do body, que eu acho que é 1400px*/
+  width: 100%;
+  background-color: #fec63e;
+  /*Tira a logo e o menu das bordas*/
+  padding: 10px 0;
+}
+.header_menu {
+  text-align: right;
+}
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  /*cada li, vai abaixar 20px. é aqui que "centraliza" o menu*/
+  margin-top: 20px;
+}
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  font-size: 14px;
+  /*esse paddding é usado para aumentar um pouco a area de clique do link. aumenta para cima e para baixo, mas aumenta somente o padding do link*/
+  padding: 10px 0;
+}
+.header_menu ul li a:hover {
+  color: white;
+}
+/*introdução*/

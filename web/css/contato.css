@@ -1,0 +1,114 @@
+.interna_contato {
+  background: url("../img/bg-contato.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/*======================ORÇAMENTO===============*/
+.contato {
+  /*usando o margin top aqui, seria a mesma coisa que 
+  utilizar o padding-bottom na secao acima */
+  padding: 40px 0;
+}
+.contato-form {
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+
+/*vai deixar as label em blocos, assim deixando 
+tudo um embaixo do outro*/
+.contato-form label {
+  display: block;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+.contato-form input {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  background: none; /* vai tirar a cor de fundo*/
+  color: black; /*quando o usuario escrever, a letra vai ficar
+  da cor branca */
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.contato-form textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #fec63e;
+  background: none; /* vai tirar a cor de fundo*/
+  color: black; /*quando o usuario escrever, a letra vai ficar
+  da cor branca */
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.contato-form button {
+  display: block;
+  background: none; /* vai tirar a cor de fundo*/
+  outline: none; /*tira aquele destaque que faz na caixa*/
+  padding: 7px 40px;
+}
+
+.contato_dados {
+  color: #000;
+}
+.contato_dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+.contato_dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contato_dados ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+/* Do mesmo jeito que usamos o :nth-child() para as li's, utilizamos esse aqui para o 
+span. presumo que funcione em qualquer outra tag, mas pelo que entendi, o nth:nth-child(
+  só funcina com as listas e o type-of com qualquer uma.
+  o mesmo podia ser feito na parte dos produtos, mas deixei a parte do email para 
+  referencia. */
+.contato_dados span:nth-of-type(even) {
+  margin-bottom: 30px;
+}
+.contato_dados ul {
+  margin-top: 10px;
+}
+.contato_dados ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.contato_dados ul li a {
+  border: 3px solid #fec63e;
+  /* se nao colocar o display block, os efeitos de altura e largura nao funcionaram no a */
+  display: block;
+  /*vai desgrudar os icones da borda*/
+  padding: 10px;
+}
+.contato_dados ul li a:hover {
+  border-color: #000;
+}
+/*sobreescreve os estilos de btn*/
+.contato-form .btn:hover {
+  border-color: black;
+  color: #000;
+}
+.contato-mapa {
+  margin-bottom: 60px;
+}
